@@ -1,0 +1,82 @@
+/*
+  Styles for Image Box
+*/
+.imageBoxWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.imageBox {
+  height: 200px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 350px) {
+  .box1 {
+    display: block;
+    width: 100%;
+  }
+  .box2,
+  .box3,
+  .box4 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .box1,
+  .box2 {
+    display: block;
+    width: 48%;
+  }
+  .box3,
+  .box4 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .box1,
+  .box2,
+  .box3 {
+    display: block;
+    width: 32%;
+  }
+  .box4 {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    display: block;
+    width: 24%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 14px; /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+  padding-right: 2px; /* slight padding from the right */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the tracking area */
+  margin-right: 2px; /* ensures the track itself also respects padding */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(78, 74, 74); /* color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+  border: 3px solid #f1f1f1; /* creates padding around scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(78, 74, 74); /* darker shade of purple when hovered over */
+}
