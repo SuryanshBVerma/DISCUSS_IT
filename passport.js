@@ -8,7 +8,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: `https://discussit-backend.up.railway.app:${process.env.PORT}/api/auth/google/callback`,
+      callbackURL: `https://discuss-it-backend.up.railway.app:${process.env.PORT}/api/auth/google/callback`,
       scope: ["email", "profile"],
     },
     async function (accessToken, refreshToken, profile, done) {
